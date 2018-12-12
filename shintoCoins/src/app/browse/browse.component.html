@@ -1,0 +1,12 @@
+<p>
+  browse works!
+</p>
+<div class = "scroll" style= "overflow-y: scroll; height: 200px;">
+  <div *ngFor="let idx of this.ledger">
+    
+    Action: {{idx.action}} | Amount: {{idx.amount}} | Value: {{idx.value}} | <button (click)="showDeets(idx)" >Details</button>
+  </div>
+
+</div>
+
+<app-deets *ngIf="seeDeets" [coinId]="account"></app-deets>

@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <button [routerLink]="['/mine']" >Mine Shinto!</button> | 
+<button [routerLink]="['/buy']" >Buy Coins!</button> | 
+<button [routerLink]="['/sell']" >Sell Coins</button> | 
+<button [routerLink]="['/browse']" >Browse the Ledger</button> <br/>
+  <img width="300" alt="Angular Logo" src="https://d2gg9evh47fn9z.cloudfront.net/800px_COLOURBOX32157639.jpg"><br/>
+  <h3>Your Wallet: {{this._shintoService.coins}} ShintoCoin! | Value of ShintoCoin: {{this._shintoService.coinValue}} </h3>
+
+<router-outlet></router-outlet>
+</div>
+
+
+

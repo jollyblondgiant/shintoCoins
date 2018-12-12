@@ -1,0 +1,6 @@
+<h3> answer the following question to earn a coin: </h3>
+<h4>{{question['question']}}</h4>
+<form (submit)="answerTrivia()">
+  <input name="usrAnswer" [(ngModel)]="usrAnswer">
+  <input type="submit" value="Mine!">
+  </form>
